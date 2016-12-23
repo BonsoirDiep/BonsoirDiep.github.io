@@ -5,34 +5,14 @@ categories: [Điều khiển, STM32]
 tags: [control led via internet, nodejs, iots]
 ---
 
-> Phím điều khiển đơn giản: 
-> Thực tế bạn đang sử dụng server bên thứ 3
-<script language="javascript" type="text/javascript">
-  var wsUri = "wss://gepa14.herokuapp.com";
-  function myAction(message){
-      websocket = new WebSocket(wsUri);
-      websocket.onopen = function(evt) { onOpen(evt) };
-      websocket.onmessage = function(evt) { onMessage(evt) };
-      /**/
-      function onOpen(evt){
-          websocket.send(message);
-      }
-      function onMessage(evt){
-          console.log(evt.data);
-          document.getElementById("output").innerHTML = evt.data;
-          websocket.close();
-      }
-  }
-</script>
+> Bài viết cung cấp 1 giải pháo, ý tưởng
+> Việc tiến hành đã qua thử nghiệm với heroku
 
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+Dự án nhỏ này cung cấp giải pháp điều khiển thiết bị từ xa 1 cách miễn phí.
+Thông thường bạn sẽ phải triển khai ip tĩnh cho thiết bị.
+Song ở đây, việc bắt tay 3 bên được thực hiện như sau:
+1. A - server chạy trên nodejs, gắn trực tiếp với thiết bị qua cab USB
+2. W - server kiểu echo (thực tế gần giống) trên heroku
+3. B - nơi lưu trữ client dạng file .html tĩnh, chọn github page
 
-<button class="btn btn-warning" onclick="myAction('orange')">Cam</button><br>
-<button class="btn btn-success" onclick="myAction('green')">Xanh</button>
-<button class="btn btn-danger" onclick="myAction('red')">Đỏ</button><br>
-<button class="btn btn-info" onclick="myAction('blue')">Lục</button>
-<br><div id="output">null</div>
+![Mô tả](/images/handshake.png "mô tả")
