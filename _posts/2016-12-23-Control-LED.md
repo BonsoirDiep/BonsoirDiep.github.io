@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Trình điều khiển STM32F407
+categories: [Điều khiển, STM32]
+tags: [control led via internet, nodejs, iots]
 ---
 
-Phím điều khiển đơn giản:<br><br>
+> Phím điều khiển đơn giản: 
+> Thực tế bạn đang sử dụng server bên thứ 3
 <script language="javascript" type="text/javascript">
   var wsUri = "wss://gepa14.herokuapp.com";
   function myAction(message){
