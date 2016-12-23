@@ -17,6 +17,9 @@ comments: false
         text-align: center;
         width: auto;
     }
+   .container{
+		text-align: center;
+	}
     </style>
     <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <script language="javascript" type="text/javascript">
@@ -43,10 +46,10 @@ comments: false
         <p>Click button to control led on Stm32-F4</p> 
     </div>
     <div class="container">
-        &ensp;&ensp;&ensp;&ensp;<button class="btn btn-warning" onclick="myAction('orange')">Cam</button><br>
-        <button class="btn btn-success" onclick="myAction('green')">Xanh</button>
-        <button class="btn btn-danger" onclick="myAction('red')">Đỏ</button><br>
-        &ensp;&ensp;&ensp;&ensp;<button class="btn btn-info" onclick="myAction('blue')">Lục</button><br>
+        <button style="width: 64px;" class="btn btn-warning" onclick="myAction('orange')">Cam</button><br>
+        <button style="width: 64px;" class="btn btn-success" onclick="myAction('green')">Xanh</button>
+        <button style="width: 64px;" class="btn btn-danger" onclick="myAction('red')">Đỏ</button><br>
+        <button style="width: 64px;" class="btn btn-info" onclick="myAction('blue')">Lục</button><br>
     <br>
     <div id="output"></div>
     </div>
