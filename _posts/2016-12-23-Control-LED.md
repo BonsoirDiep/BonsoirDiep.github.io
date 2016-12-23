@@ -2,6 +2,7 @@
 layout: post
 title: Trình điều khiển STM32F407
 ---
+{% include youtube.html content="https://www.youtube.com/embed/6P7QghHq-zU" %}
 
 Phím điều khiển đơn giản:<br><br>
 <script language="javascript" type="text/javascript">
