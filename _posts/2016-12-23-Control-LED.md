@@ -25,6 +25,12 @@ tags: [control led via internet, nodejs, iots]
   }
 </script>
 
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+
 <button class="btn btn-warning" onclick="myAction('orange')">Cam</button><br>
 <button class="btn btn-success" onclick="myAction('green')">Xanh</button>
 <button class="btn btn-danger" onclick="myAction('red')">Đỏ</button><br>
