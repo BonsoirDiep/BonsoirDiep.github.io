@@ -9,36 +9,36 @@ comments: false
 <html>
 <header>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style type="text/css">
-    #buttonControl {
-        /* center the content */
-        margin: 0 auto;	
-        text-align: center;
-        width: auto;
-    }
-   .container{
+	<title>IOTs simple by HocGoi</title>
+	<style type="text/css">
+	#buttonControl {
+		/* center the content */
+		margin: 0 auto;	
+		text-align: center;
+		width: auto;
+	}
+	.container{
 		text-align: center;
 	}
-    </style>
-    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script language="javascript" type="text/javascript">
-    var wsUri = "wss://gepa14.herokuapp.com";
-    function myAction(message){
+	</style>
+	<link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script language="javascript" type="text/javascript">
+	var wsUri = "wss://gepa14.herokuapp.com";
+	function myAction(message){
 	document.getElementById("output").innerHTML = "waiting..";
-        websocket = new WebSocket(wsUri);
-        websocket.onopen = function(evt) { onOpen(evt) };
-        websocket.onmessage = function(evt) { onMessage(evt) };
-        /**/
-        function onOpen(evt){
-            websocket.send(message);
-        }
-        function onMessage(evt){
-            console.log(evt.data);
-            document.getElementById("output").innerHTML = evt.data;
-            websocket.close();
-        }
-    }
-    </script>
+	websocket = new WebSocket(wsUri);
+	websocket.onopen = function(evt) { onOpen(evt) };
+	websocket.onmessage = function(evt) { onMessage(evt) };
+	/**/
+	function onOpen(evt){
+	    websocket.send(message);
+	}
+	function onMessage(evt){
+	    console.log(evt.data);
+	    document.getElementById("output").innerHTML = evt.data;
+	    websocket.close();
+	}}
+	</script>
 </header>
 <body>
     <div class="jumbotron text-center">
