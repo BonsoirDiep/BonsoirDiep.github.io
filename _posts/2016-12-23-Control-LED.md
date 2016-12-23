@@ -2,7 +2,6 @@
 layout: post
 title: Trình điều khiển STM32F407
 ---
-{% include youtube.html "https://www.youtube.com/embed/6P7QghHq-zU" %}
 
 Phím điều khiển đơn giản:<br><br>
 <script language="javascript" type="text/javascript">
@@ -26,4 +25,4 @@ Phím điều khiển đơn giản:<br><br>
 <button class="btn btn-success" onclick="myAction('green')">Xanh</button>
 <button class="btn btn-danger" onclick="myAction('red')">Đỏ</button><br>
 <button class="btn btn-info" onclick="myAction('blue')">Lục</button>
-<br><div id="output"></div>
+<br><div id="output">null</div>
