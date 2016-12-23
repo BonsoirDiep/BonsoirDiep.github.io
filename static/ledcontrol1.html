@@ -25,6 +25,7 @@ comments: false
     <script language="javascript" type="text/javascript">
     var wsUri = "wss://gepa14.herokuapp.com";
     function myAction(message){
+	document.getElementById("output").innerHTML = "waiting..";
         websocket = new WebSocket(wsUri);
         websocket.onopen = function(evt) { onOpen(evt) };
         websocket.onmessage = function(evt) { onMessage(evt) };
@@ -51,7 +52,7 @@ comments: false
         <button style="width: 64px;" class="btn btn-danger" onclick="myAction('red')">Đỏ</button><br>
         <button style="width: 64px;" class="btn btn-info" onclick="myAction('blue')">Lục</button><br>
     <br>
-    <div id="output"></div>
+    <div id="output">ready, please click..</div>
     </div>
 
 </body>
