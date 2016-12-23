@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Học Gỏi - là nơi giao lưu, trao đổi kiến thức cơ bản về lập trình, điều khiển, phần cứng, phần mềm...
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+### Main page
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[Google Site](https://sites.google.com/view/hocgoi/)
