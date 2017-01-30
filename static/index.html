@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1"/>
+  <title>face-detection-node-opencv</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="socket.io.js"></script>
+</head>
+<body>
+  <div class="container center">
+    <canvas id="canvas" width="640" height="480"></canvas>
+  </div>
+  <script language="javascript" type="text/javascript">
+  var socket = io("http://gepa10.herokuapp.com");
+  
+  var ctx = document.getElementById('canvas').getContext('2d');
+  
+  socket.on('frame', function (data) {
+    if(data.image){
+      var img = new Image();
+      img.src = 'data:image/jpeg;base64,' + data.buffer;
+      ctx.drawImage(img, 0, 0,640,480);
+    }
+  });
+  </script>
+</body>
+</html>
