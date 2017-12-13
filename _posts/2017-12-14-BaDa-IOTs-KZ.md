@@ -5,8 +5,7 @@ categories: [IOTs]
 tags: [raspberry, nodejs, iots]
 ---
 
-> Thêm thông tin trên website:
-> https://badaiots-kz.herokuapp.com/
+> Thêm thông tin trên website: [BaDa IOTs Kz](https://badaiots-kz.herokuapp.com/)
 
 
 # Mua sản phẩm (có mã key) 
