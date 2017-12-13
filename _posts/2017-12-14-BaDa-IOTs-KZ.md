@@ -16,7 +16,7 @@ tags: [raspberry, nodejs, iots]
 3. -> Đến mục thiết kế, thiết kế theo mô tả 
 4. -> "Build" để hoàn thành thiết kế 
 5. -> Hoàn thiện mạch thiết kế trên hoặc "test" với ứng dụng mô phỏng 
-6. -> Đến đây hoặc dùng các ứng dụng của BaDa theo dõi , điều khiển 
+6. -> Đến [đây](https://badaiots-kz.herokuapp.com/nguoidung/theodoi.html) hoặc dùng các ứng dụng của BaDa theo dõi , điều khiển 
 
 # Chế độ phát triển: 
 ### ( Dịch vụ, sản phẩm của bạn với chúng tôi) 
